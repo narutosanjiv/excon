@@ -3,9 +3,9 @@ source "http://rubygems.org"
 gemspec
 
 gem 'jruby-openssl', :platform => :jruby
-gem 'unicorn', :platforms => [:mri, :rbx]
+gem 'unicorn', '>= 4.9.0', :platforms => [:mri, :rbx]
 gem 'rubysl', '~> 2.0', :platform => :rbx
-gem 'rack', '~> 1.5'
+gem 'rack', '~> 2.2', '>= 2.2.18'
 
 # group :benchmark do
 #   gem 'em-http-request'
